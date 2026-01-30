@@ -29,4 +29,4 @@ Die Auswertung des Modells auf dem Test-Set ergab folgende Kennzahlen:
 
 ---
 **Autor:** Furkan Can Çelik
-*Student der Wirtschaftsinformatik (Management Information Systems)*
+
