@@ -1,32 +1,72 @@
-# 📊 Umsatzprognose mit Machine Learning
+# Makine Öğrenmesi ile Gelir Tahmini / Umsatzprognose mit Machine Learning
 
-Dieses Projekt wurde entwickelt, um die monatlichen Verkaufsmengen (Quantity) in einem E-Commerce-Kontext mithilfe von Regression-Algorithmen vorherzusagen. Es demonstriert den gesamten Data-Science-Workflow: von der Datenvorverarbeitung bis zur Modellvalidierung.
+Bu proje, bir e-ticaret bağlamında aylık satış miktarlarını (Quantity) regresyon algoritmaları kullanarak tahmin etmek için geliştirilmiştir. Veri bilimi sürecinin tamamını kapsar: veri ön işleme, modelleme ve doğrulama.
 
-##  Projektziel
-Das Hauptziel ist es, basierend auf Faktoren wie Preisgestaltung, Wettbewerbsdaten und Produktbewertungen präzise Vorhersagen über zukünftige Verkaufszahlen zu treffen.
-
-##  Datenstruktur & Strategie
-In diesem Repository wird eine strikte Trennung zwischen Training und Test durchgeführt:
-
-* **Erhöhte Genauigkeit durch Training (`Testdatensatz.csv`):** Dies ist der primäre Datensatz, mit dem das Modell trainiert wurde, um Muster und Trends zu lernen.
-* **Reale Validierung (`Test.csv`):** Dieser Datensatz dient als "Blind-Test" für das Modell. Er wurde ausschließlich für die finale Anwendung und Prüfung der Vorhersagekraft verwendet.
-
-##  Tech Stack
-* **Sprache:** Python
-* **Bibliotheken:** Pandas, NumPy, Scikit-learn, Matplotlib, Joblib.
-* **Modell:** Random Forest Regressor.
-
-##  Modellleistung (Validierung)
-Die Auswertung des Modells auf dem Test-Set ergab folgende Kennzahlen:
-* **R2 Score (Bestimmtheitsmaß):** ~70,20%
-* **RMSE (Root Mean Square Error):** 8,98
-
-##  Dateibeschreibung
-* `yzvas.ipynb`: Das Jupyter Notebook mit dem gesamten Python-Code.
-* `model.pkl`: Das trainierte und exportierte Machine-Learning-Modell.
-* `le.pkl`: Der gespeicherte LabelEncoder für die Kategorisierung.
-* `vorhersage_vs_tatsaechlich.png`: Visualisierung der vorhergesagten vs. tatsächlichen Werte.
+Dieses Projekt wurde entwickelt, um die monatlichen Verkaufsmengen (Quantity) in einem E-Commerce-Kontext mithilfe von Regressionsalgorithmen vorherzusagen. Es deckt den gesamten Data-Science-Workflow ab: Datenvorverarbeitung, Modellierung und Validierung.
 
 ---
-**Autor:** Furkan Can Çelik
 
+## Proje Amacı / Projektziel
+
+Bu projenin amacı, fiyatlandırma, rekabet verileri ve ürün değerlendirmeleri gibi faktörlere dayanarak gelecekteki satış miktarlarını tahmin etmektir.
+
+Ziel des Projekts ist es, basierend auf Faktoren wie Preisgestaltung, Wettbewerbsdaten und Produktbewertungen präzise Vorhersagen über zukünftige Verkaufszahlen zu treffen.
+
+---
+
+## Veri Yapısı & Strateji / Datenstruktur & Strategie
+
+Bu projede eğitim ve test verileri arasında net bir ayrım yapılmıştır.
+
+In diesem Projekt wird eine klare Trennung zwischen Trainings- und Testdaten vorgenommen.
+
+- **Eğitim Verisi (`Testdatensatz.csv`)**  
+  Modelin veri içindeki desenleri öğrenmesi için kullanılan ana veri setidir.  
+  Primärer Datensatz zum Trainieren des Modells, um Muster und Zusammenhänge zu lernen.
+
+- **Test Verisi (`Test.csv`)**  
+  Model performansını ölçmek için kullanılan görülmemiş test verisidir.  
+  Blind-Test-Datensatz zur finalen Bewertung der Modellleistung.
+
+---
+
+## Teknoloji Yığını / Tech Stack
+
+- Dil / Sprache: Python  
+- Kütüphaneler / Bibliotheken: Pandas, NumPy, Scikit-learn, Matplotlib, Joblib  
+- Model / Modell: Random Forest Regressor  
+
+---
+
+## Model Performansı / Modellleistung
+
+Test seti sonuçları / Ergebnisse auf dem Test-Set:
+
+- R2 Score (Bestimmtheitsmaß): ~70,20%  
+- RMSE (Root Mean Square Error): 8,98  
+
+---
+
+## Dosya Açıklaması / Dateibeschreibung
+
+- `yzvas.ipynb`  
+  Tüm Python kodlarının bulunduğu Jupyter Notebook dosyası.  
+  Jupyter Notebook mit dem gesamten Python-Code.
+
+- `model.pkl`  
+  Eğitilmiş makine öğrenmesi modeli.  
+  Trainiertes und exportiertes Machine-Learning-Modell.
+
+- `le.pkl`  
+  Kategorik verileri encode etmek için kullanılan LabelEncoder.  
+  LabelEncoder für die Kategorisierung.
+
+- `vorhersage_vs_tatsaechlich.png`  
+  Gerçek ve tahmin edilen değerlerin karşılaştırma grafiği.  
+  Visualisierung von vorhergesagten vs. tatsächlichen Werten.
+
+---
+
+## Yazar / Autor
+
+Furkan Can Çelik
